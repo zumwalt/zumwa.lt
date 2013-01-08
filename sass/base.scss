@@ -1,0 +1,72 @@
+//  =============================================================================
+//  Zumwa.lt!
+//  =============================================================================
+
+@import "bourbon";
+@import "normalize";
+
+//  =============================================================================
+//  Variables
+//  =============================================================================
+
+    // Grid
+    $fg-column: 100px;             // Column Width
+    $fg-gutter: 10px;             // Gutter Width
+    $fg-max-columns: 10;          // Total Columns For Main Container
+
+    // Colors
+    $green: #c2ae00;
+    $white: #FFF;
+    $black: #222;
+
+    // Fonts
+    $sans: 'Open Sans', sans-serif;
+
+//  =============================================================================
+//  Base
+//  =============================================================================
+
+    body {
+      color: rgba($black, 0.6);
+      background: $green;
+      font-family: $sans;
+      line-height: 1.7;
+    }
+
+    // Typography
+    h1 {
+      color: $white;
+      font-size: modular-scale(21px,   1, 2);
+      font-weight: 300;
+      line-height: 1.4;
+      margin: 0 0 0.67em;
+    }
+
+    h2 {
+      font-size: modular-scale(21px, 1, 1);
+      font-weight: 400;
+    }
+
+    // Links
+    a {
+      border-bottom: 1px solid rgba($black, 0.6);
+      color: rgba($black, 0.6);
+      display: inline-block;
+      line-height: 1.4;
+      padding: 0 0 0px;
+      text-decoration: none;
+      &:hover {
+        border-bottom: 1px solid rgba($black, 1);
+        color: rgba($black, 1);
+      }
+    }
+
+//  =============================================================================
+//  Layout
+//  =============================================================================
+
+    .content {
+      width: flex-grid(10);
+      margin: 100px;
+      max-width: 745px;
+    }    
